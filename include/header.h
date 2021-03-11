@@ -16,3 +16,4 @@ void module5();
 void init(int);
 void reg_event(int , int, fptr);
 void event(int);
+void freeall();
