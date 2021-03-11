@@ -40,3 +40,14 @@ void event(int eve)
         }
 }
 
+void freeall()
+{
+	struct module_str *tmp;
+        while(head != NULL)
+        {
+                tmp = head;
+                free(head);
+                head = tmp->nxt;
+        }
+}
+

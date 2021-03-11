@@ -13,4 +13,5 @@ void main()
 	printf("Enter the event to find which are the modules interested in\t");
 	scanf("%d",&ev);
 	event(ev);
+	freeall();
 }
