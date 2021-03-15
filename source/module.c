@@ -1,4 +1,5 @@
 #include<header.h>
+#include<samhead2.h>
 
 void module1()
 {       
@@ -25,6 +26,31 @@ void module5()
 	        printf("Inside module 5\n");
 }
 
+void module6()
+{
+                printf("Inside module 6\n");
+}
+
+void module7()
+{
+                printf("Inside module 7\n");
+}
+
+void module8()
+{
+                printf("Inside module 8\n");
+}
+
+void module9()
+{
+                printf("Inside module 9\n");
+}
+
+void module10()
+{
+                printf("Inside module 10\n");
+}
+
 void init(int num)
 {
         int eve, event = 0;
@@ -38,16 +64,7 @@ void init(int num)
                 else
                         break;
         }
-        if(num == 1)
-                fp = module1;
-        else if(num == 2)
-                fp = module2;
-        else if(num == 3)
-                fp = module3;
-        else if(num == 4)
-                fp = module4;
-        else
-                fp = module5;
+        fp = fpa[num-1];
         reg_event(num, event, fp);
         return;
 }
